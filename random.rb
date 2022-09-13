@@ -1,3 +1,5 @@
+#git add .
+#git commit -m "initial commit"
 days=rand(1..3)
 raspisanie = Array.new(days)
 raspisanie[0]=rand(1..5)
