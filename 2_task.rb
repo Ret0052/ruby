@@ -1,10 +1,13 @@
+# frozen_string_literal: true
+
 class Users
-    def fio
-        puts 'AVD'
-    end
-    def prof
-        puts 'prof'
-    end
+  def fio
+    puts 'AVD'
+  end
+
+  def prof
+    puts 'prof'
+  end
 end
 
 artem = Users.new
