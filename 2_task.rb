@@ -1,6 +1,6 @@
 class Users
     def fio
-        puts 'Artem Volkov'
+        puts 'AVD'
     end
     def prof
         puts 'prof'
