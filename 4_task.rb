@@ -18,7 +18,7 @@ puts (20..24)
 #5
 rgb =%w[red green blue]
 puts rgb[rand(0..2)]
-#6 я рот ебал этой формулы
+#6 я рот ебал этой формулы квадрата растояния
 #7
 str = 'Hello'
 puts str.reverse
