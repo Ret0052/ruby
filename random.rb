@@ -3,7 +3,7 @@ raspisanie = Array.new(days)
 i=0
 while i<days
     day=rand(1..5)
-    unless raspisanie.include? day 
+    unless raspisanie.include? day
         raspisanie[i]=day
         i+=1
     end
@@ -11,7 +11,7 @@ end
 raspisanie=raspisanie.sort
 for i in 0..days-1 do
     case raspisanie[i]
-        when 1 
+        when 1
             puts 'Понедельник'
         when 2
             puts 'Вторник'
