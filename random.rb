@@ -1,7 +1,7 @@
 days=rand(1..3)
 raspisanie = Array.new(days)
 i=0
-while i<(days) 
+while i<days
     day=rand(1..5)
     unless raspisanie.include? day 
         raspisanie[i]=day
