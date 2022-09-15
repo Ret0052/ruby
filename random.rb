@@ -8,15 +8,7 @@ while i<(days)
         i+=1
     end
 end
-for i in 0..days-1 do
-    for j in 0..days-1 do 
-        if((j<(days-1))&&(raspisanie[j]>raspisanie[j+1]))
-            sortirovka=raspisanie[j]
-            raspisanie[j]=raspisanie[j+1]
-            raspisanie[j+1]=sortirovka
-        end
-    end
-end
+raspisanie=raspisanie.sort
 for i in 0..days-1 do
     case raspisanie[i]
         when 1 
