@@ -43,9 +43,7 @@ class Points
 end
 
 points=Points.new
-print points.point1_x - points.point2_x
-print ' '
-puts points.point1_y - points.point2_y
+puts "#{points.point1_x-points.point2_x} #{points.point1_y-points.point2_y}"
 #3
 puts $LOAD_PATH.size
 #4
@@ -62,4 +60,4 @@ jigul=Car.new
 ural=Car.new
 jigul.set_name('Жигуль')
 ural.set_name('Урал')
-puts jigul.name + ' и ' + ural.name
+puts "#{jigul.name} и #{ural.name}"
