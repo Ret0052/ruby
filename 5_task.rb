@@ -24,7 +24,7 @@ fio=User.new
 fio.set_suname('Волков')
 fio.set_name('Артем')
 fio.set_dadname('Дмитриевич')
-puts fio.suname + ' ' + fio.name + ' '  + fio.dadname
+puts "#{fio.suname} #{fio.name} #{fio.dadname}" 
 
 #2
 class Points
