@@ -28,4 +28,3 @@ case number
     when String
         puts 'Стррока'
 end
-#sa
