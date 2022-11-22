@@ -5,32 +5,23 @@ def sum(*par)
         for i in (0..par.size - 1)
             result += par[i]
         end
-        return result
+        result
     end
 end
-puts sum()
+puts sum(1, 2, 3, 4, 5)
 #2
 
-#3
+#4
 class User
-    @@name, @@suname, @@dadname = [], [], []
-    def add_user()
-        puts 'Введите имя'
-        @@name << gets
-        puts 'Введите фамилию'
-        @@suname << gets
-        puts 'Введите отчество'
-        @@dadname << gets
-    end
-    def get_user(id)
-        unless id<0 || id>@@name.size
-            puts @@name[id], @@suname[id], @@dadname[id]
-        else
-            puts 'Нет'
-        end
+    def fio(name,suname,dadname)
+        @name = name
+        @suname = suname
+        @dadname = dadname
     end
 end
-users = User.new
-users.add_user()
-users.add_user()
-users.get_user(gets.to_i)
+user1, user2, user3 = User.new, User.new, User.new
+user1.fio(gets, gets, gets)
+user2.fio(gets, gets, gets)
+user3.fio(gets, gets, gets)
+all = [user1, user2, user3]
+puts all
