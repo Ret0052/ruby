@@ -1,15 +1,9 @@
 week = %w[Понедельник Вторник Среда Четверг Пятница]
 days=rand(1..3)
-raspisanie = Array.new(days)
-i=0
-while i<days
-    day=rand(0..4)
-    unless raspisanie.include? day
-        raspisanie[i]=day
-        i+=1
-    end
+raspisanie = []
+[0..days].each do |day|
+    new_day = rand(0..4)
+    raspisanie << day unless raspisanie.include? new_day
+    redo if raspisanie.size < days
 end
-raspisanie=raspisanie.sort
-for i in 0..days-1 do
-    puts week[raspisanie[i]]
-end
+raspisanie.sort.each { |day| puts week[day] }

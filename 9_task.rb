@@ -9,8 +9,6 @@ def sum(*par)
     end
 end
 puts sum(1, 2, 3, 4, 5)
-#2
-
 #4
 class User
     def fio(name,suname,dadname)
